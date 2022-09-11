@@ -3,7 +3,7 @@
     <head>    
      <center>
         <img src="foto.jpg" alt="" />
-     <div style='width: 4cm; text-align: center;'>Fardhan Maulana 41226059</div
+     <div style='width: 8cm; text-align: center;'>Fardhan Maulana 41226059</div
          </center>
      </head>
 <style>
@@ -13,75 +13,117 @@ body {
     width: 100%;
     height: 100vh;
     align-items: center;
-    display: grid;
+    display: flex;
     justify-content: center;
     text-align: center;
 }
-    
  tombol-table {
-  font-family: sans-serif;
-  font-size: 15px;
-  background: #22a4cf
-  color: white;
-  border: white 3px solid;
-  border-radius: 5px;
-  padding: 12px 20px;
-  box-shadow: 0px 0px 10px 3px;
-  margin-right: auto;
-  margin-left: auto;
-}
-  tombol-table:hover {
-      transform: scale(1.1);
-      transition: 0.2s;
-      background-color: aliceblue;
-      box-shadow: 0 6px 10px 0 lightblue;
-      opacity:0,9;
-}
-  tombol-tablecss {
-   font-family: sans-serif;
-   font-size: 15px;
-   background: #22a4cf
-   color: white;
-   border: white 3px solid;
-   border-radius: 5px;
-   padding: 12px 20px;
-   box-shadow: 0px 0px 10px 3px;
-   margin-right: auto;
-   margin-left: auto;
-}
-  tombol-tablecss:hover {
-      transform: scale(1.1);
-      transition: 0.2s;
-      background-color: aliceblue;
-      box-shadow: 0 6px 10px 0 lightblue;
-      opacity:0,9;
-}
+        width: 180px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-top: 30px;
+        margin-right: 25px;
+        border: 4px solid;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+      }
+
+      tombol-table:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+        background-color: aliceblue;
+        box-shadow: 0 6px 10px 0 darkblue;
+      }
+
+      tombol-tablecss {
+        width: 180px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-top: 30px;
+        border: 4px solid;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+      }
+
+      tombol-tablecss:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+        background-color: aliceblue;
+        box-shadow: 0 6px 10px 0 darkblue;
+      }
+
+      tombol-tablejquery {
+        width: 180px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-top: 30px;
+        margin-left: 25px;
+        border: 4px solid;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+      }
+
+      tombol-tablejquery:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+        background-color: aliceblue;
+        box-shadow: 0 6px 10px 0 darkblue;
+      }
+
+      tombol-table h4 {
+        text-align: center;
+        margin: 15px;
+      }
+
+      tombol-tablecss h4 {
+        text-align: center;
+        margin: 15px;
+      }
+
+      tombol-tablejquery h4 {
+        text-align: center;
+        margin: 15px;
+      }
+
+
+    a {
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+      }
   h1{
-  	color: blue;
-  	cursor: pointer;
-  	transition: 0.2s;
+    color: blue;
+    cursor: pointer;
+    transition: 0.2s;
   }
 
   h1:hover{
-  	color: red;
-  	letter-spacing: 2px; 	
+    color: red;
+    letter-spacing: 2px;    
   }
 
   img{
-  	width: 4cm;
-    height: 4cm;
-  	border-radius: 50%;
-  	box-shadow: 1px 1px 4px gray;
-  	padding: 5px;
-  	background: white;
-  	margin: 15px;
-  	transition: 0.2s;
-  	opacity: 75%;
+    width: 6cm;
+    height: 6cm;
+    border: ;
+    border-radius: 50%;
+    box-shadow: 1px 1px 4px gray;
+    padding: 5px;
+    background: white;
+    margin: 15px;
+    transition: 0.2s;
+    opacity: 75%;
   }
   img:hover{
-  	transform: scale(1.0);
-  	opacity: 100%;
-  	box-shadow: 1px 1px 6px red;
+    transform: scale(1.0);
+    opacity: 100%;
+    box-shadow: 1px 1px 6px red;
   }
   body {
     -webkit-animation: colorchange 60s infinite; 
@@ -103,16 +145,20 @@ body {
 }   
 </style>
 <body>
-    <div class="tombol-table">
-        <a onclick="alert('Kamu mau masuk ke halaman 10 best friend?')" href="./p03/table.html"
-          >10 Best Friend</a
+    <li>
+        <a 
+           onclick="alert('Kamu mau masuk ke halaman 10 best friend?')"
+           href="./p03/table.html"
         >
+            <div class="tombol-table"><h4>Top 10 Best Friend</h4></div>
+        </a>
          <a
         onClick="alert('Kamu mau masuk ke halaman 5 best friend?')"
         href="./p03css/tablecss.html"
-      >
-        <div class="pencet2"><h4>Top 5 Best Friends</h4></div>
-      </a>
-      </div>
-         </body>
-         </html>
+        >
+            <div class="tombol-tablecss"><h4>Top 5 Best Friend</h4></div>
+        </a>
+  
+    </li>
+  </body>
+</html>
