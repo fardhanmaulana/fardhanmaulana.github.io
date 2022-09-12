@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+     body {
+      -webkit-animation: colorchange 60s infinite; 
+      animation: colorchange 60s infinite;
+      }
+    @-webkit-keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}
+    @keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}   
+body {
+        background-color: lightblue;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+      .tombol {
+        width: 100px;
+        height: 20px;
+        background-color: lightblue;
+        margin-top: 25px;
+        border: 3px solid;
+        border-radius: 15px;
+        transition: 0.3s;
+      }
+
+      .tombol:hover {
+        background-color: white;
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
+      table {
+        border: 4px solid;
+      }
+      table tr th {
+        background-color: darkgrey;
+        transition: 0.4s;
+      }
+
+      table tr th:hover {
+        background-color: lightgrey;
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
+
+      table tr td {
+        background-color: white;
+        transition: 0.4s;
+      }
+
+      table tr td:hover {
+        background-color: lightblue;
+        transform: scaleX(1.1);
+        transition: 0.2s;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div class="judul"><h2>Top 5 JQuery Best Friends</h2></div>
+      <table border="1" cellpadding="15" cellspacing="5">
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Alamat</th>
+          <th>Aksi</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="text" id="nama__1">Rafi Dwi Candra Murti</td>
+          <td class="text" id="alamat__1">Cirebon</td>
+          <td class="text" id="edit__1">Hapus</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="text" id="nama__2">Mohammad Septian Aldeadzan</td>
+          <td class="text" id="alamat__2">Cirebon</td>
+          <td class="text" id="edit__2">Hapus</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="text" id="nama__3">Muhammad Fauzan Abdillah</td>
+          <td class="text" id="alamat__3">Cirebon</td>
+          <td class="text" id="edit__3">Hapus</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="text" id="nama__4">Rochman Hidayat</td>
+          <td class="text" id="alamat__4">Cirebon</td>
+          <td class="text" id="edit__4">Hapus</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="text" id="nama__5">Mochamad Nurfaizal</td>
+          <td class="text" id="alamat__5">Cirebon</td>
+          <td class="text" id="edit__5">Hapus</td>
+        </tr>
+      </table>
+      <a onClick="alert('Kembali ke halaman sebelumnya?')" href="../index.html">
+        <div class="tombol">Kembali</div>
+      </a>
+    </center>
+    <script>
+      $(document).ready(function () {
+        $(".text").click(function () {
+          let text = $(this).text();
+          alert(`Anda memilih cell yang berisi "${text}"`);
+          if (text != "Hapus") {
+            let text2 = prompt("Apakah ingin diubah?:", text);
+            if (!text2) return;
+            $(this).text(text2);
+          } else {
+            let yakin = confirm("Apakah ingin dihapus?");
+            if (!yakin) return;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
