@@ -60,7 +60,9 @@ button a {
   color: black;
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
+  }
 }
+
 @media screen and (max-width:800px){
 
   #maincontent{
