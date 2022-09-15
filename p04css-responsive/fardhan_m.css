@@ -61,13 +61,14 @@ button a {
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
 }
- @media screen and (max-width:680px){
-    #maincontent{
-      width: auto;
-      float: none;
-    }
-    #sidebar{
-      width: auto;
-      float: none;
-    }
+@media screen and (max-width:800px){
+
+  #maincontent{
+    width: auto;
+    float: none;
   }
+  #sidebar{
+    width: auto;
+    float: none;
+  }
+}
