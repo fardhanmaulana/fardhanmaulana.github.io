@@ -63,13 +63,48 @@ button a {
   text-decoration: none;
 }
 
-@media screen and (max-width:768px){
-  #maincontent{
-    width: auto;
-    float: none;
+@media only screen and (min-width: 478px) and (max-width:600px){
+  .kepala{
+    width: 100%;
   }
-  #sidebar{
-    width: auto;
-    float: none;
+  .rule{
+    width: 100%;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .kepala{
+    width: 100%;
+  }
+  .rule{
+    width: 100%;
+  }
+  img{
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px){
+  .kepala{
+    width: 100%;
+  }
+  .rule{
+    width: 100%;
+  }
+  img{
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px){
+  .kepala{
+    width: 100%;
+  }
+  img{
+    width: 100%;
+  }
+  .rule{
+  	width: 100%;
   }
 }
