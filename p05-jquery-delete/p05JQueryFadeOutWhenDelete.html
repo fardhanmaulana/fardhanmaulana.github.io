@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>P05 JQuery FadeOut When Delete</title>
+  </head>
+  <body>
+    <center>
+      <div class="judul"><h2>Top 5 Best Friends</h2></div>
+      <table border="1" cellpadding="15" cellspacing="5">
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Alamat</th>
+          <th>Aksi</th>
+        </tr>
+        <tr class="baris" id="baris__1">
+          <td>1</td>
+          <td class="text" id="nama__1">Rafi Dwi Candra Murti</td>
+          <td class="text" id="alamat__1">Cirebon</td>
+          <td class="text" id="edit__1">Hapus</td>
+        </tr>
+        <tr class="baris" id="baris__2">
+          <td>2</td>
+          <td class="text" id="nama__2">Mohammad Septian Aldeadzan</td>
+          <td class="text" id="alamat__2">Cirebon</td>
+          <td class="text" id="edit__2">Hapus</td>
+        </tr>
+        <tr class="baris" id="baris__3">
+          <td>3</td>
+          <td class="text" id="nama__3">Muhammad Fauzan Abdillah</td>
+          <td class="text" id="alamat__3">Cirebon</td>
+          <td class="text" id="edit__3">Hapus</td>
+        </tr>
+        <tr class="baris" id="baris__4">
+          <td>4</td>
+          <td class="text" id="nama__4">Rochman Hidayat</td>
+          <td class="text" id="alamat__4">Cirebon</td>
+          <td class="text" id="edit__4">Hapus</td>
+        </tr>
+        <tr class="baris" id="baris__5">
+          <td>5</td>
+          <td class="text" id="nama__5">Mochamad Nurfaizal</td>
+          <td class="text" id="alamat__5">Cirebon</td>
+          <td class="text" id="edit__5">Hapus</td>
+        </tr>
+      </table>
+      <a onClick="alert('Kembali ke halaman sebelumnya?')" href="../index.html">
+        <div class="tombol">Kembali</div>
+      </a>
+    </center>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="sript.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".text").click(function () {
+          let text = $(this).text();
+          alert(`Anda memilih cell yang berisi "${text}"`);
+          if (text != "Hapus") {
+            let text2 = prompt("Apakah ingin diubah?:", text);
+            if (!text2) return;
+            $(this).text(text2);
+          } else {
+            let yakin = confirm("Apakah ingin dihapus?");
+            if (!yakin) return;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
