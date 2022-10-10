@@ -1,40 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Fardhan Maulana</title>
-     <center>
-        <img src="fotosaya.jpg" alt="" />
-     <div style='width: 8cm; text-align: center;'>Fardhan Maulana 41226059</div
-         </center>
-     </head>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Fardhan Maulana</title>
+		<link rel="stylesheet" type="text/css" href="csssss/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	</head>
+	<body>
+		
+		<!-- sidebar -->
+		<input type="checkbox" id="check">
+		<div class="sidebar">
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#tugas">Tugas</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
 
-<body>
-        <a 
-           onclick="alert('Kamu mau masuk ke halaman 10 best friend?')"
-           href="./p03/table.html"
-        >
-            <div class="tombol-table"><h4>Top 10 Best Friend</h4></div>
-        </a>
-         <a
-        onClick="alert('Kamu mau masuk ke halaman 5 best friend?')"
-        href="./p03css/tablecss.html"
-        >
-            <div class="tombol-tablecss"><h4>Top 5 Best Friend</h4></div>
-        </a>
-         <a
-        onClick="alert('Kamu mau masuk ke halaman 5 best friend?')"
-        href="./p03jquery/tablejquery.html"
-        >
-            <div class="tombol-tablejquery"><h4>Top 5 Best Friend JQuery</h4></div>
-        </a>
-        <a
-        onClick="alert('Kamu mau masuk ke halaman 5 best friend?')"
-        href="./p05-jquery-delete/p05JQueryFadeOutWhenDelete.html
-        >
-            <div class="tombol-tablejquery"><h4>Top 5 Best Friend JQuery FadeOutWhenDelete</h4></div>
-             
-  </body>
+		<!-- bagian header -->
+		<header>
+			<div class="container">
+				<h1><a href="">fardhan</a></h1>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#tugas">Tugas</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+
+				<!-- menu mobile -->
+				<label for="check" class="mobile-menu"><i class="fas fa-bars fa-2x"></i></label>
+			</div>
+		</header>
+
+		<!-- bagian banner -->
+		<section class="banner">
+			<div class="container">
+				<div class="banner-left">
+					<img src="fotosaya.jpg">
+					<h2>Hai...<br>
+						Saya adalah seorang <span class="efek-ngetik"></span></h2>
+					<p>Selamat datang di website portfolio saya!</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- bagian about -->
+		<section id="about">
+			<div class="container">
+				<h3>About</h3>
+				<center>
+				<p>Saya termasuk orang yang suka dalam bidang IT, Sekarang saya sedang menempuh pendidikan di STMIK IKMI Cirebon, Saya alumni dari SMK Informatika Al-Irsyad Al-Islamiyyah Cirebon Jurusan Teknik Komputer dan Jaringan Tahun 2021.</p>
+				<h3>Data Pribadi</h3>
+				<p>&bull; Nama : Fardhan Maulana</p>
+				<p>&bull; Tempat Tanggal Lahir : Cirebon, 10 Desember 2002</p>
+				<p>&bull; Agama : Islam</p>
+				<p>&bull; Gender : Laki-Laki</p>
+				<p>&bull; Status : Mahasiswa</p>
+				<p>&bull; Prodi : Teknik Informatika</p>
+				<p>&bull; Nim : 41226059</p>
+				<h3>My Skill</h3>
+				<p>&bull; Network Administrator</p>
+				<p>&bull; Cisco</p>
+				<p>&bull; Mikrotik</p>
+			</div>
+		</section>
+
+		<!-- bagian tugas -->
+		<section id="tugas">
+			<div class="container">
+				<h3>Tugas Pemrograman Web</h3>
+
+					<h4>&bull; Pertemuan 3</h4>
+					<a href="&bull; ./p03/table.html">
+					</a>
+					<a href="&bull; ./p03css/tablecss.html">
+					</a>
+					<a href="&bull; ./p03jquery/tablejquery.html">
+					</a>
+					<a href="&bull; ./p03form-lv1/p03form-lv1.html">
+					</a>
+
+					<h4>&bull; Pertemuan 4</h4>
+					<a href="&bull; ./p04css-basic/formpmbcss.html">
+					</a>
+
+
+					<h4>&bull; Pertemuan 5</h4>
+					<a href="&bull; ./p05-jquery-delete/p05JQueryFadeOutWhenDelete.html">
+					</a>
+
+					<h4>&bull; Pertemuan 6</h4>
+					<a href="">
+					</a>
+		</section>
+
+		<!-- bagian contact -->
+		<section id="contact">
+			<div class="container">
+				<h3>Contact</h3>
+				<div class="col-3">
+					<h4>Email</h4>
+					<p>fardhanmaulana345@gmail.com</p>
+				</div>
+		</section>
+
+		<!-- bagian footer -->
+		<footer>
+			<div class="container">
+				<small>Copyright &copy; 2022 - Fardhan Maulana</small>
+			</div>
+		</footer>
+
+		<script src="jsss/script.js"></script>
+	</body>
 </html>
