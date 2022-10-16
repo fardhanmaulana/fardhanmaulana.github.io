@@ -1,11 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
+.content {
+  width: 95%
+  margin: auto;
+  padding: 10px;
+}
+
+img {
+	width: 100%;
 }
 
 body {
 font-family: 'Open Sans', sans-serif;
 }
+
 .dhan {
   width: 90%;
   margin: auto;
@@ -60,8 +66,7 @@ label {
   font-weight: normal;
 }
 
-.manjing,
-select {
+.manjing, select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -70,6 +75,13 @@ select {
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 16px;
+}
+
+select {
+    background-color: #fff;
+    border: none;
+    font-size: 11px;
+    border: 1px solid #ccc;
 }
 
 input[type="radio"] {
@@ -92,11 +104,12 @@ button {
 }
 
 @media only screen and (max-width: 768px) {
+  
   body {
     box-sizing: border-box;
   }
 
-  .header img {
+  img {
     width: 100%;
   }
 
@@ -128,10 +141,10 @@ button {
     font-size: 9px;
   }
 
-  .manjing,
-  select {
+  .manjing, select {
     padding: 5px 10px;
     font-size: 10px;
+    margin: 5px 0 10px;
   }
 
   input[type="file"] {
@@ -141,6 +154,7 @@ button {
   button {
     padding: 8px 10px;
     margin: 8px 0;
+    cursor: pointer
     font-size: 10px;
   }
 }
