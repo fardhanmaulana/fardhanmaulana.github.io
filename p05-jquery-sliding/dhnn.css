@@ -1,0 +1,42 @@
+body {
+    -webkit-animation: colorchange 60s infinite; 
+    animation: colorchange 60s infinite;
+}
+@-webkit-keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}
+@keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}
+
+#muter {
+      padding: 5px;
+      text-align: center;
+      background-color: beige;
+      border: solid 1px blue;
+      font-family: Arial;
+      color: rgb(10, 44, 238);
+      cursor: pointer;
+}
+
+#muter:hover{
+    background-color: rgb(192,192, 192);
+}
+    
+#apalah {
+      padding: 50px;
+      text-align: center;
+      background-color: beige;
+      border: solid 1px blue;
+      font-family: sans-serif;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      display: none;
+    }
