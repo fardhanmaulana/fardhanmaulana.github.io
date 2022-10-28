@@ -1,0 +1,78 @@
+body {
+    -webkit-animation: colorchange 60s infinite; 
+    animation: colorchange 60s infinite;
+}
+@-webkit-keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}
+@keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}
+
+img{
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	cursor: pointer;
+	width: 150px;
+	border-radius: 50%;
+	box-shadow: 1px 1px 4px white;
+	padding: 10px;
+	transition: 0.5s;
+}
+
+img:hover{
+	transform: scale(1.1);
+}
+
+h2{
+	margin: auto;
+}
+
+p{
+	margin-bottom: auto;
+}
+
+.navigasi{
+    background-color: grey;
+    padding: 15px;
+}
+
+.menu{
+	padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu:hover{
+	background-color: rgb(24,35,56);
+}
+
+.aktif{
+	background-color: rgb(28, 14, 228);
+}
+
+.home{
+	background-color: white;
+	padding: 15px;
+    text-align: justify;
+}
+
+.isi{
+	display: none;
+	background-color: white;
+	padding: 15px;
+    text-align: justify;
+}
